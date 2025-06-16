@@ -1,0 +1,67 @@
+body{
+    height: 100vh;
+    background: linear-gradient(-45deg, #231338, #2e1246,#3a1f5a,#602372);
+    /*background-color: #231338;*/
+    background-size: 400%, 400%;
+    animation: gradient 12s ease-in infinite;
+    color: #ededed;
+}
+
+@keyframes gradient {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 86%;
+    padding: 20px 10%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100%;
+}
+
+/*Texto*/
+.logo{
+    font-size: 50px;
+    font-family: "Karantina", system-ui;
+    font-weight: 300;
+    font-style: normal;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.logo2{
+    font-size: 50px;
+    font-family: "Karantina", system-ui;
+    font-weight: 300;
+    font-style: normal;
+    color: #EB76AF;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.logo-container {
+    display: flex;
+}
+
+.navbar a{
+    font-size: 18px;
+    font-family: "Instrument Sans", sans-serif;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 55px;
+}

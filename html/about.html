@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Lorna</title>
+    
+    <link rel="stylesheet" href="/css/about.css">
+    <link rel="icon" type="image/x-icon" href="iris.png">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Karantina:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+     <header class="header">
+         <div class="logo-container">
+            <a href="#" class="logo">Port</a><a href="#" class="logo2">folio</a>
+        </div>
+        
+        <nav class="navbar">
+            <a href="index.html"> <img src="../imagenes/hogar.png" alt="hogar"> Home</a>
+            <a href="about.html"> <img src="../imagenes/usuario.png" alt="hogar"> About</a>
+            <a href="portfolio.html"> <img src="../imagenes/documento.png" alt="hogar"> Portfolio</a>
+            <a href="contact.html"> <img src="../imagenes/sobre.png" alt="hogar"> Contact</a>
+        </nav>
+
+        
+    </header>
+
+    <section id="about" class = "about">
+        <div class = "about-content">
+            <div class="introduction-container">
+                <div class="me_conteiner">
+                    <div class="circle"></div>
+                    <img src="../imagenes/PersonajeNormal.png" alt="me" style="width:400px;height:500px;", class="me">
+                </div>
+                
+                <div class="about-row">
+                    <h1>About</h1><h1 class="name">me</h1>
+                </div>
+                <div class = "subtitle"><h3>Fullstack developer</h3></div>
+                <div class = "paragraph">
+                    <p>Hello. My name is Lorna Murillo. I am in my second<br> 
+                    year of the major Informática y Tecnología Multimedia<br>
+                    at the Universidad de Costa Rica. I’m a designer, illustrator<br>
+                    and programmer.</p>
+                </div>
+                <div class="about-row">
+                    <h1 class="profesional">Profesional</h1><h1 class="skills">skills</h1>
+                </div>
+                
+            </div>
+
+        </div>
+        <div class="rectangulos" id="contenedor-rectangulos"></div>
+
+        <script>/*Parte de JavaScript para poner las imágenes en los rectángulos*/
+            const imagenes = [/*Hace un arreglo con todas las imágenes*/
+                { src: "../imagenes/java_22523.png", alt: "java" },
+                { src: "../imagenes/file_type_python_icon_130221.png", alt: "python" },
+                { src: "../imagenes/krita_103959.png", alt: "krita" },
+                { src: "../imagenes/inkscape_original_logo_icon_146470.png", alt: "inkscape" },
+                { src: "../imagenes/mysql_official_logo_icon_169938.png", alt: "mysql" },
+                { src: "../imagenes/mongodb_compass_macos_bigsur_icon_189933.png", alt: "mongo" },
+                { src: "../imagenes/postman_macos_bigsur_icon_189815 (1).png", alt: "postman" },
+                { src: "../imagenes/file_type_html_icon_130541.png", alt: "html" },
+                { src: "../imagenes/file_type_css_icon_130661.png", alt: "css" }
+            ];
+
+            const contenedor = document.getElementById("contenedor-rectangulos");/*Busca la clase que tiene ese id*/
+
+            imagenes.forEach(imagen => {/*Recorre el arreglo por medio de un forEach*/
+                const rect = document.createElement("div");/*Crea un div vacío*/
+                rect.classList.add("rectangulo");/*Añade una clase "rectángulo" a ese div creado*/
+
+                const img = document.createElement("img");/*Crea una imagen con el mismo src y alt de la posición en la que está*/
+                img.src = imagen.src;
+                img.alt = imagen.alt;
+
+                rect.appendChild(img);/*Inserta la imagen dentro del div*/
+                contenedor.appendChild(rect);/*Mete la clase "rectángulo" en el contenedor*/
+            });
+        </script>
+
+    </section>
+</body>
+</html>

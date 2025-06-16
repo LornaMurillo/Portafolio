@@ -1,0 +1,158 @@
+body{
+    height: 100vh;
+    background: linear-gradient(-45deg, #231338, #2e1246,#3a1f5a,#602372);
+    /*background-color: #231338;*/
+    font-family: "Instrument Sans", sans-serif;
+    background-size: 400%, 400%;
+    animation: gradient 12s ease-in infinite;
+    color: #ededed;
+}
+
+@keyframes gradient {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 86%;
+    padding: 20px 10%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100%;
+}
+
+/*Header*/
+.logo{
+    font-size: 50px;
+    font-family: "Karantina", system-ui;
+    font-weight: 300;
+    font-style: normal;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.logo2{
+    font-size: 50px;
+    font-family: "Karantina", system-ui;
+    font-weight: 300;
+    font-style: normal;
+    color: #EB76AF;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.logo-container {
+    display: flex;
+}
+
+.navbar a{
+    font-size: 18px;
+    font-family: "Instrument Sans", sans-serif;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 55px;
+}
+
+/*Cuerpo*/
+.email-container {
+    font-family: "Instrument Sans", sans-serif;
+    display: flex;
+    line-height: 0; /*Interlineado entre lineas*/
+    flex-direction: column;
+    align-items: center;/*Esto es para ordenarlo al centro*/
+    margin-left: 50px;
+    margin-top: 200px;
+    flex-direction: column;
+}
+
+.contact-row {
+    font-size: 25px;
+    display: flex;
+    gap: 8px; /*Espaciado*/
+}
+
+.titule{
+    color: #EB76AF;
+}
+
+/*Inputs*/
+
+form .inputs{
+    position: relative;
+    margin-left: 20px;
+}
+
+form .inputs input{
+    padding: 18px/*arriba*/ 28px/*derecha*/ 18px/*abajo*/ 28px/*izquierda*/;
+    margin-bottom: 20px;
+    outline: none;
+    font-size: 15px;
+    font-family: "Instrument Sans", sans-serif;  
+    border-radius: 30px;
+    background-color: transparent;
+    border-color:#EB76AF;
+    
+}
+
+form .input1 input{
+    margin-left: -400px;
+}
+
+form .input2 input{
+    margin-left: -400px;
+}
+
+form .input3 input{
+    margin-left: -300px;
+}
+
+form .input4 input{
+    margin-right: 0px;
+}
+/*Botones*/
+.button {
+  background-color: #EB76AF;
+  font-family: "Instrument Sans", sans-serif;
+  border: none;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  margin-left: 40px;
+  cursor: pointer;
+  border-radius: 15px;
+  transition-duration: 0.4s;
+  cursor: pointer;  
+}
+
+.button1:hover {
+  background-color: #9e3266;
+  color: white;
+}
+
+
+
+/*Footer*/
+.footer {
+  background-color: #071621; 
+  padding: 40px;
+  display: flex;
+  gap: 15px; 
+}
+
