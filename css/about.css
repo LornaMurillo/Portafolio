@@ -1,9 +1,11 @@
 body{
     height: 100vh;
-    background: linear-gradient(-45deg, #231338, #2e1246,#3a1f5a,#602372);
-    /*background-color: #231338;*/
-    background-size: 400%, 400%;
-    animation: gradient 12s ease-in infinite;
+    overflow-x: hidden;
+    /*overflow: hidden; /*Esto es para que no se pueda hacer scoll*/
+    /*background: linear-gradient(-45deg,#be71c4);*/
+    background-color: #080B2A;
+    /*background-size: 400%, 400%;
+    animation: gradient 12s ease-in infinite;*/
     color: #ededed;
 }
 
@@ -21,7 +23,7 @@ body{
 
 .header{
     position: fixed;
-    top: 0;
+    top: 20px;
     left: 0;
     width: 86%;
     padding: 20px 10%;
@@ -49,7 +51,7 @@ body{
     font-family: "Karantina", system-ui;
     font-weight: 300;
     font-style: normal;
-    color: #EB76AF;
+    color: #CE76EB;
     text-decoration: none;
     font-weight: 600;
 }
@@ -110,7 +112,7 @@ body{
     font-family: "Instrument Sans", sans-serif;
     font-size: 20px;
     line-height: 2;
-    color: #EB76AF;
+    color: #CE76EB;
     align-items: center;
     margin-left: -200px;
     margin-right: 200px;
@@ -118,7 +120,7 @@ body{
 }
 
 .name{
-    color: #EB76AF;
+    color: #CE76EB;
 }
 
 /*Rectángulos*/
@@ -134,12 +136,17 @@ body{
 .rectangulo {
   width: 100px;
   height: 75px;
-  border: 1px solid #EB76AF; 
+  border: 1px solid #CE76EB; 
   border-radius: 10px; 
   background-color: transparent; 
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.rectangulo:hover {
+  background-color: #CE76EB;
+  transition: background-color 0.1s ease-in-out; 
 }
 
 .rectangulo img {
@@ -165,4 +172,48 @@ body{
     top: 150px;
     left: 285px;
     filter: contrast(100%);
+}
+
+.circle1 {
+    width: 30vw;
+    height: 30vh;
+    max-width: 450px;
+    max-height: 450px;
+    border-radius: 50%;
+    background-color: #38307D;
+    filter: blur(9vw); /* Esto es para el difuminado */
+    position: absolute;
+    top: 500px;
+    bottom: 0px;
+    right: -100px;
+    z-index: -2;/*Esto es para enviar el círculo detrás de la imagen*/
+}
+
+.circle2 {
+    width: 30vw;
+    height: 30vh;
+    max-width: 450px;
+    max-height: 450px;
+    border-radius: 50%;
+    background-color: #38307D;
+    filter: blur(9vw); /* Esto es para el difuminado */
+    position: absolute;
+    top: -150px;
+    bottom: 0px;
+    left: -100px;
+    z-index: -2;/*Esto es para enviar el círculo detrás de la imagen*/
+}
+
+/*Rectángulo*/
+.cristal {
+    width: 94vw;
+    height: 92vh;
+    border-radius: 20px;
+    background-color: #17285B;
+    opacity: 0.2;
+    position: absolute;
+    top: 30px;
+    bottom: 0px;
+    left: 50px;
+    z-index: -1;/*Esto es para enviar el rectángulo detrás de la imagen*/
 }
