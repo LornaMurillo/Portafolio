@@ -186,8 +186,8 @@ body{
     border-radius: 60%;
     background-color: #FC1F7F;
     position: absolute;
-    top: 275px;
-    left: 290px;
+    top: 34vh;
+    left: 18vw;
     z-index: -1;/*Esto es para enviar el círculo detrás de la imagen*/
 }
 
@@ -207,10 +207,10 @@ body{
     background-color: #38307D;
     filter: blur(9vw); /* Esto es para el difuminado */
     position: absolute;
-    top: 500px;
-    bottom: 0px;
-    right: -100px;
-    z-index: -2;/*Esto es para enviar el círculo detrás de la imagen*/
+    top: 80vh;
+    bottom: 0vw;
+    right: -10vw;
+    z-index: -3;/*Esto es para enviar el círculo detrás de la imagen*/
 }
 
 .circle2 {
@@ -222,10 +222,25 @@ body{
     background-color: #38307D;
     filter: blur(9vw); /* Esto es para el difuminado */
     position: absolute;
-    top: -150px;
-    bottom: 0px;
-    left: -100px;
-    z-index: -2;/*Esto es para enviar el círculo detrás de la imagen*/
+    top: -5vh;
+    bottom: 0vw;
+    left: -10vw;
+    z-index: -3;/*Esto es para enviar el círculo detrás de la imagen*/
+}
+
+.circle3 {
+    width: 30vw;
+    height: 30vh;
+    max-width: 450px;
+    max-height: 450px;
+    border-radius: 50%;
+    background-color: #38307D;
+    filter: blur(9vw); /* Esto es para el difuminado */
+    position: absolute;
+    top: 150vh;
+    bottom: 0vw;
+    left: -12vw;
+    z-index: -3;/*Esto es para enviar el círculo detrás de la imagen*/
 }
 
 /*Rectángulo*/

@@ -175,7 +175,7 @@ form .inputs input {
   display: inline-block;/*Esto es para que no inicie una nueva linea*/
   font-size: clamp(10px, 2.5vw, 16px); 
   margin: 4px 2px;
-  margin-left: 45vw;
+  margin-left: 44.5vw;
   cursor: pointer;
   border-radius: 0.5em;
   transition-duration: 0.4s;
@@ -221,10 +221,10 @@ form .inputs input {
     background-color: #38307D;
     filter: blur(9vw); /* Esto es para el difuminado */
     position: absolute;
-    top: 550px;
-    bottom: 0px;
-    left: -100px;
-    z-index: -2;/*Esto es para enviar el círculo detrás de la imagen*/
+    top: 80vh;
+    bottom: 0vw;
+    left: -10vw;
+    z-index: -3;/*Esto es para enviar el círculo detrás de la imagen*/
 }
 
 .circle2 {
@@ -236,9 +236,9 @@ form .inputs input {
     background-color: #38307D;
     filter: blur(9vw); /* Esto es para el difuminado */
     position: absolute;
-    top: -150px;
-    bottom: 0px;
-    right: -100px;
+    top: -10vh;
+    bottom: 0vw;
+    right: -5vw;
     z-index: -2;/*Esto es para enviar el círculo detrás de la imagen*/
 }
 
