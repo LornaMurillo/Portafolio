@@ -154,13 +154,37 @@ body{
   max-height: 80%;
 }
 
+/*Parte de las habilidades*/
+.skill{
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 20px;
+    display: flex;
+    line-height: 2;
+}
+
+.softskills{
+    margin-top: 30vh;
+    margin-left: 25vw;
+}
+
+.technicalskills{
+    margin-top: 30vh;
+    margin-left: 20vw;
+}
+
+.softtitule{
+    color: #CE76EB;
+}
+
+.techtitule{
+    color: #CE76EB;
+}
 /*Círculo*/
 .circle {
     width: 350px;
     height: 325px;
     border-radius: 60%;
     background-color: #FC1F7F;
-    /*filter: blur(80px);/* Esto es para el difuminado */
     position: absolute;
     top: 275px;
     left: 290px;
@@ -207,7 +231,7 @@ body{
 /*Rectángulo*/
 .cristal {
     width: 94vw;
-    height: 92vh;
+    height: 172vh;
     border-radius: 20px;
     background-color: #17285B;
     opacity: 0.2;
