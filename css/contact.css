@@ -2,7 +2,7 @@ body{
     height: 100vh;
     overflow: hidden;
     /*background: linear-gradient(-45deg,#be71c4);*/
-    background-color: #080B2A;
+    background-color: #0e1025;
     /*background-size: 400%, 400%;
     animation: gradient 12s ease-in infinite;*/
     color: #ededed;
@@ -85,8 +85,16 @@ body{
     gap: 8px; /*Espaciado*/
 }
 
-.titule{
+/*Parte del título de "Contact me"*/
+
+.titule2 {
     color: #CE76EB;
+
+}
+
+.titule1 {
+    color: #ffffff;
+    margin-left: 0vw;
 }
 
 /*Inputs*/
@@ -97,7 +105,7 @@ body{
   gap: 1vw;
   justify-content: center;
   padding: 2vh 4vw;
-  margin-right: 6vw;
+  margin-right: 0vw;
 }
 
 
@@ -156,40 +164,52 @@ form .inputs input {
   outline: none;
 }
 
-/* Campo de mensaje más alto */
-
-
 /*Botones*/
 .button {
   background: linear-gradient(to right, #6737FD, #B594FF);
   font-family: "Instrument Sans", sans-serif;
   border: none;
   color: white;
-  padding: 1em 2em;
+  padding: 1em 2em;/*Relleno arriba, abajo y a los lados*/
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
+  display: inline-block;/*Esto es para que no inicie una nueva linea*/
   font-size: clamp(10px, 2.5vw, 16px); 
   margin: 4px 2px;
-  margin-left: 43vw;
+  margin-left: 45vw;
   cursor: pointer;
   border-radius: 0.5em;
   transition-duration: 0.4s;
-  cursor: pointer;  
 }
 
-.button:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(202, 130, 250, 0.4);
+.button:hover {/*El hover es cuando el mouse para encima del botón*/
+  transform: scale(1.05);/*Esto es para que crezca en tamaño*/
+  box-shadow: 0 8px 20px rgba(202, 130, 250, 0.4);/*Esto es para agregar una sombra*/
 }
 
 /*Footer*/
 .footer {
-  padding: 40px;
+  padding: 2.2vw;
   display: flex;
   gap: 2vw; 
 }
 
+.facebook{
+  margin-top: 0vh;
+}
+
+.instagram{
+  margin-top: 0vh;
+}
+
+.github{
+  margin-top: 0vh;
+}
+
+.correo{
+  margin-top: 0vh;
+  font-family: "Instrument Sans", sans-serif;
+  font-size: 14px;
+}
 /*Círculo*/
 
 .circle1 {
