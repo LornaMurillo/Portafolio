@@ -94,7 +94,7 @@ body{
 
 .titule1 {
     color: #ffffff;
-    margin-left: 0vw;
+    margin-left: -2vw;
 }
 
 /*Inputs*/
@@ -114,6 +114,7 @@ body{
   flex-direction: column;
   gap: 0vh;
   margin-top: -2vh;
+  margin-left: -3vw;
   width: 26vw; /* o ajusta: 35vw y 35vw si quieres más espacio entre ellas */
 }
 
@@ -151,6 +152,7 @@ body{
   height: 20vh;
   width: 50vw;
   margin: 3vh auto 0 auto;
+  margin-left: -3vw;
 }
 
 form .inputs input {
@@ -175,7 +177,7 @@ form .inputs input {
   display: inline-block;/*Esto es para que no inicie una nueva linea*/
   font-size: clamp(10px, 2.5vw, 16px); 
   margin: 4px 2px;
-  margin-left: 44.5vw;
+  margin-left: 43.5vw;
   cursor: pointer;
   border-radius: 0.5em;
   transition-duration: 0.4s;
