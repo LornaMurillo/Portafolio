@@ -1,24 +1,11 @@
 body{
     height: 100vh;
-    overflow: hidden; 
-    /*background: linear-gradient(-45deg,#be71c4);*/
+    /**overflow: hidden; */
+    overflow-x: hidden;
     background-color: #0e1025;
-    /*background-size: 400%, 400%;
-    animation: gradient 12s ease-in infinite;*/
     color: #ededed;
 }
 
-@keyframes gradient {
-    0%{
-        background-position: 0% 50%;
-    }
-    50%{
-        background-position: 100% 50%;
-    }
-    100%{
-        background-position: 0% 50%;
-    }
-}
 
 .header{
     position: fixed;
@@ -67,10 +54,113 @@ body{
     margin-left: 55px;
 }
 
+/*Título*/
+
+.titule{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Karantina", sans-serif;
+}
+
+h2{
+    position: relative;
+    font-size: 10vw;
+    margin-left: 34vw;
+    margin-top: 25vh;
+    color: #101530;
+    -webkit-text-stroke: 0.1vw #eb76b1;
+    text-transform: uppercase;
+    letter-spacing: 1vw;
+}
+
+h2::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    color: #2f1057;
+    -webkit-text-stroke: 0.1vw #CE76EB;
+    border-right: 2px solid #CE76EB;
+    overflow: hidden;
+    animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+    0%,10%,100%{
+        width: 0;
+    }
+    70%,90%{
+        width: 55%;
+    }
+}
+
+/*Círculo*/
+.circle1 {
+    width: 30vw;
+    height: 30vh;
+    max-width: 450px;
+    max-height: 450px;
+    border-radius: 50%;
+    background-color: #38307D;
+    filter: blur(10vw); /* Esto es para el difuminado */
+    position: absolute;
+    top: 0vh;
+    bottom: 0vw;
+    right: -10vw;
+    z-index: -2;/*Esto es para enviar el círculo detrás de la imagen*/
+}
+
+.circle2 {
+    width: 30vw;
+    height: 30vh;
+    max-width: 450px;
+    max-height: 450px;
+    border-radius: 50%;
+    background-color: #38307D;
+    filter: blur(10vw); /* Esto es para el difuminado */
+    position: absolute;
+    top: 100vh;
+    bottom: 0vw;
+    left: 0vw;
+    z-index: -2;/*Esto es para enviar el círculo detrás de la imagen*/
+}
+
+.circle3 {
+    width: 30vw;
+    height: 30vh;
+    max-width: 450px;
+    max-height: 450px;
+    border-radius: 50%;
+    background-color: #38307D;
+    filter: blur(10vw); /* Esto es para el difuminado */
+    position: absolute;
+    top: 350vh;
+    bottom: 0vw;
+    left: 0vw;
+    z-index: -5;/*Esto es para enviar el círculo detrás de la imagen*/
+}
+
+.circle4 {
+    width: 30vw;
+    height: 30vh;
+    max-width: 450px;
+    max-height: 450px;
+    border-radius: 50%;
+    background-color: #38307D;
+    filter: blur(10vw); /* Esto es para el difuminado */
+    position: absolute;
+    top: 230vh;
+    bottom: 0vw;
+    right: -10vw;
+    z-index: -2;/*Esto es para enviar el círculo detrás de la imagen*/
+}
 /*Rectángulo*/
 .cristal {
     width: 94vw;
-    height: 92vh;
+    height: 382vh;
     border-radius: 20px;
     background-color: #17285B;
     opacity: 0.2;
@@ -79,4 +169,82 @@ body{
     bottom: 0px;
     left: 50px;
     z-index: -1;/*Esto es para enviar el rectángulo detrás de la imagen*/
+}
+
+/*Parte de las tarjetas*/
+.wrapper{
+    padding: 10px 10%;
+}
+
+#card-area{
+    padding: 50px 0;
+}
+
+.box-area{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.box{
+    border-radius: 10px;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 5px 5px rgba(12, 6, 22, 0.5);
+}
+
+.box img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+    object-fit: cover;
+}
+
+.overlay{
+    height: 0;
+    width: 100%;
+    background: linear-gradient(transparent, #1a1035 78%);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 10px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.overlay h3{
+    font-weight: 500;
+    margin-bottom: 5px;
+    margin-top: 80%;
+    font-family: Instrument Sans sans-serif;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.overlay a{
+    margin-top: 10px;
+    color: #0e1025;
+    text-decoration: none;
+    font-size: 14px;
+    background-color: #c577df;
+    border-radius: 50px;
+    padding: 5px 15px;
+}
+
+.boxLhover img{
+    transform: scale(1.2);
+}
+
+.box:hover .overlay{
+    height: 100%;
 }
